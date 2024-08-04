@@ -67,9 +67,7 @@ func goreapiCreateUserHandler2(w http.ResponseWriter, r *http.Request) {
 	{
 		var err error
 		data := r.URL.Query().Get("user")
-		err = json.Unmarshal([]byte( //!go:build gore
-			//! +build gore
-			data), &user)
+		err = json.Unmarshal([]byte(data), &user)
 		if err != nil {
 			http.Error(w, err.Error(), http.StatusBadRequest)
 			return

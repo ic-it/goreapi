@@ -1,3 +1,6 @@
+//go:build gore
+// +build gore
+
 package main
 
 import (
