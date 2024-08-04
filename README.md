@@ -113,3 +113,7 @@ var (
 ```bash
 go run ./cmd/gen/...
 ```
+
+**Result of the code generation Example**
+
+[Here](./cmd/web/handlers-generated.go)
